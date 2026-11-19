@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f7f9" />
+  <meta name="description" content="거북(Geobuk) 공식 홈페이지. 사업자 정보 및 회사 안내." />
+  <title>거북 — Geobuk</title>
+  <style>
+    :root { color-scheme: light; --ink:#17191c; --muted:#757b86; --line:#e3e6eb; --accent:#2558f4; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; min-height: 100%; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; background: #f6f7f9; color: var(--ink); -webkit-font-smoothing: antialiased; }
+    .page { width: min(100% - 64px, 1140px); min-height: 100svh; margin: 0 auto; display: flex; flex-direction: column; }
+    header { padding-top: clamp(28px, 5.5vh, 62px); display: flex; align-items: center; justify-content: space-between; }
+    .wordmark { font-size: 20px; font-weight: 800; letter-spacing: -.075em; }
+    .header-right { display: flex; align-items: center; gap: 9px; font-size: 12px; font-weight: 650; letter-spacing: .12em; color: #808793; }
+    .status { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 50px 0; }
+    .eyebrow { color: var(--accent); font-size: 12px; font-weight: 750; letter-spacing: .22em; margin: 0 0 23px; }
+    h1 { font-size: clamp(64px, 11vw, 142px); font-weight: 800; line-height: .98; letter-spacing: -.09em; margin: 0 0 32px -7px; }
+    .intro { color: #666c77; margin: 0; font-size: clamp(14px, 1.8vw, 17px); line-height: 1.75; letter-spacing: -.035em; }
+    footer { border-top: 1px solid var(--line); padding: 27px 0 clamp(25px, 4.5vh, 48px); display: flex; justify-content: space-between; align-items: end; gap: 32px; }
+    .company-details { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 11px 38px; }
+    .detail { font-size: 12px; line-height: 1.65; color: #69707b; letter-spacing: -.02em; }
+    .detail b { font-weight: 650; color: #404651; margin-right: 8px; }
+    .address { grid-column: 1 / -1; }
+    .copyright { font-size: 11px; white-space: nowrap; color: #9aa0a9; margin: 0; }
+    @media (max-width: 700px) {
+      .page { width: min(100% - 40px, 1140px); }
+      header { padding-top: 25px; }
+      .wordmark { font-size: 19px; }
+      .header-right { font-size: 10px; }
+      main { padding: 35px 0; }
+      .eyebrow { margin-bottom: 18px; font-size: 10px; }
+      h1 { font-size: clamp(65px, 19vw, 100px); margin-left: -4px; margin-bottom: 24px; }
+      .intro { font-size: 14px; }
+      footer { display: block; padding: 19px 0 23px; }
+      .company-details { grid-template-columns: 1fr; gap: 6px; }
+      .detail { font-size: 11px; }
+      .address { grid-column: auto; }
+      .copyright { margin-top: 15px; font-size: 10px; }
+    }
+    @media (max-height: 530px) {
+      header { padding-top: 15px; }
+      main { padding: 15px 0; }
+      .eyebrow { margin-bottom: 10px; }
+      h1 { font-size: clamp(48px, 12vh, 88px); margin-bottom: 12px; }
+      footer { padding-top: 12px; padding-bottom: 12px; }
+      .detail { font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header aria-label="상단 영역">
+      <div class="header-right"><span class="status" aria-hidden="true"></span> GEOBUK · KOREA</div>
+    </header>
+    <main>
+      <p class="eyebrow">GEOBUK / OFFICIAL WEBSITE</p>
+      <h1>거북<span style="color:var(--accent)">.</span></h1>
+      <p class="intro">Geobuk is a digital business based in Seoul, Korea.</p>
+    </main>
+    <footer aria-label="사업자 정보">
+      <div class="company-details">
+        <div class="detail"><b>상호</b> 거북 <span aria-hidden="true">·</span> <b>대표자</b> 한정민</div>
+        <div class="detail"><b>사업자등록번호</b> 420-02-04067</div>
+        <div class="detail"><b>통신판매업 신고번호</b> 2026-서울관악-0728</div>
+        <div class="detail address"><b>주소</b> 서울특별시 관악구 과천대로 939, 207 - S3호(남현동)</div>
+      </div>
+      <p class="copyright">© 2026 GEOBUK. ALL RIGHTS RESERVED.</p>
+    </footer>
+  </div>
+</body>
+</html>
